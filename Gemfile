@@ -7,6 +7,9 @@ gem 'rails', '3.2.16'
 
 gem 'sqlite3'
 gem 'rest-client'
+gem 'nokogiri'
+
+
 # gem 'open-uri'
 
 # Gems used only for assets and not required
