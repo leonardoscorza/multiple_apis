@@ -9,6 +9,8 @@ gem 'rails', '3.2.16'
 gem 'rest-client'
 gem 'nokogiri'
 
+gem 'therubyracer'
+
 
 # gem 'open-uri'
 
@@ -24,6 +26,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'puma'
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
