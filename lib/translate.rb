@@ -23,4 +23,3 @@ class Translate
 end
 
 $translate = Translate.new
-# p teste.convertText('pt', 'nl','ola%20meu%20nome%20%C3%A9%20momo')
