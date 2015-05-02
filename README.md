@@ -6,7 +6,7 @@
 
 Provide "infinite" comics based in xkcd service, this is just for fun : )
 
-To access [Click Here](/comicStripsRamdom)
+To access [Click Here](http://stormy-anchorage-6431.herokuapp.com/comicStripsRamdom)
 
 * * *
 
@@ -18,9 +18,9 @@ The params are (pass in URL): languageConverted, languageToConvert and text.
 
 The answer comes in Json format ({answer: phrase_translated})
 
-Url example [/translate?languageConverted=pt&languageToConvert=en&text=hello+friend](/translate?languageConverted=en&languageToConvert=es&text=hello%20friend)
+Url example [http://stormy-anchorage-6431.herokuapp.com/translate?languageConverted=pt&languageToConvert=en&text=hello+friend](/translate?languageConverted=en&languageToConvert=es&text=hello%20friend)
 
-To access [Click Here](/translate?languageConverted=en&languageToConvert=es&text=begin+here)
+To access [Click Here](http://stormy-anchorage-6431.herokuapp.com/translate?languageConverted=en&languageToConvert=es&text=begin+here)
 
 # License
 
