@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name = "viewport" content = "initial-scale = 1, user-scalable = yes">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
-    <meta name="keywords" content="" >
-    <meta name="author" content="leonardo">
-    <meta name="revisit-after" content="7">
-  </head>
-  <body style='ali:center'>
-    <h3>We have 2 API's current</h3>
+### We have 2 API's current
 
-    <hr style="margin-top: 40px;">
-    <b>1 - Comic Strips Ramdom</b>
-    <p>Provide "infinite" comics based in xkcd service, this is just for fun : )</p>
-    <p>To access <a href="/comicStripsRamdom" target="_blank">Click Here</a></p>
-    <hr>
-    <p><b>2 - Translate words</b></p>
-    <p>This app translates words and phrases in multiple languges</p>
-    <p>The params are (pass in URL): languageConverted, languageToConvert and text.</p>
-    <p>The answer comes in Json format ({answer: phrase_translated})</p>
-    <p>Url example <a href="/translate?languageConverted=en&languageToConvert=es&text=hello%20friend" target="_blank">/translate?languageConverted=pt&languageToConvert=en&text=hello+friend</a></p>
-    To access <a href="/translate?languageConverted=en&languageToConvert=es&text=begin+here" target="_blank">Click Here</a>
-  </body>
-</html>
+* * *
+
+**1 - Comic Strips Ramdom**
+
+Provide "infinite" comics based in xkcd service, this is just for fun : )
+
+To access [Click Here](/comicStripsRamdom)
+
+* * *
+
+**2 - Translate words**
+
+This app translates words and phrases in multiple languges
+
+The params are (pass in URL): languageConverted, languageToConvert and text.
+
+The answer comes in Json format ({answer: phrase_translated})
+
+Url example [/translate?languageConverted=pt&languageToConvert=en&text=hello+friend](/translate?languageConverted=en&languageToConvert=es&text=hello%20friend)
+
+To access [Click Here](/translate?languageConverted=en&languageToConvert=es&text=begin+here)
+
+# License
+
+MIT licensed
