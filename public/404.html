@@ -1,26 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-  </style>
+  <head>
+    <meta charset="utf-8" />
+    <title>404 - :(</title>
+    
+    <style type="text/css">
+      @font-face {
+	    font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+      }
+      #pacman {
+        height:450px;
+        width:442px;
+        /*margin:20px auto;*/
+      }
+      #shim { 
+        font-family: BDCartoonShoutRegular; 
+        position:absolute;
+        visibility:hidden
+      }
+      .title
+      {
+        color: white;
+        text-shadow: 5px 5px black;
+      }
+      .sad
+      {
+        color: #e74c3c;
+        text-shadow: 1px 1px black;
+      }
+      .happy
+      {
+        color: #69ee69;
+        text-shadow: 1px 1px black;
+      }
+      .secundary
+      {
+          font-size: 28px;
+      }
+      h1 { font-family: BDCartoonShoutRegular; text-align:center; }
+      body { width:442px; margin:0px auto; font-family:sans-serif; }
+      a { text-decoration:none; }
+    </style>
+
 </head>
 
-<body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
-  </div>
+  <body style="background-image: url(image/pac.jpg)";>
+  
+
+
+  <h1 class="title secundary">404 <b class='sad'>:(</b> Page not found</h1>
+  <h1 class="title secundary" >Have some fun <b class='happy'>:)</b></h1>
+
+  <div id="pacman"></div>
+  
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
 </body>
 </html>
